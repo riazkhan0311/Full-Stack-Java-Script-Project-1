@@ -17,20 +17,37 @@ An optional year property which contains a number identifying the date of the qu
 	//TODO RANDOMIZE QUOTE INDEX
 	
 	// selects a random quote object from the quotes array
-    var quote = quotes[0];
+    var quote = quotes[2];
     // returns the randomly selected quote object
 	return quote;	
 }
 
-
-
 //Create a function named printQuote which follows these rules:
 
-function printQuote () {
-//printQuote calls the getRandomQuote function and stores the returned quote object in a variable	
+function printQuote (getRandomQuote) {
+ var getRandomQuoteVar = getRandomQuote; //getRandomQuote () 
+ var listHTML = '<ol>';
+  for ( var i = 0; i < quotes.length; i += 1) {
+    listHTML += '<li>' + quotes[i][0] + ' by ' + quotes[i][1] + '</li>';
+  }
+  listHTML += '</ol>';
+  //print(listHTML);
+  console.log(listHTML);
+  }
 
+//printQuote calls the getRandomQuote function and stores the returned quote object in a variable	
+printQuote (getRandomQuote);
 	
-}
+
+//}
+
+/*
+
+
+//<p class="quote"> [quote here] </p> <p class="source"> [source here] <span class="citation"> [citation here] </span> <span class="year"> [year here] </span> </p>
+
+//var sentence = document.getElementByClassName(quote);
+//console.log(sentence);
 
 /*
 printQuote calls the getRandomQuote function and stores the returned quote object in a variable
@@ -44,4 +61,4 @@ printQuote displays the final HTML string to the page. You can use the following
 var html = document.getElementById('quote-box').innerHTML;
 console.log(html);
 
-document.getElementById('quote-box').innerHTML = '<p>Hello, how are you?</p>';
+document.getElementById('quote-box').innerHTML = quotes[0].quote;
