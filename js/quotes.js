@@ -1,26 +1,25 @@
 var quotes=[
 		{
-			quote: "You can do anything but not everything",
-			name:"David Allen",
-			//citation: "Making It All Work",
-			//year: 2009
-	    },
+			quote: "People may doubt what you say, but they will believe what you do.",
+			name:"David Allen"
+		 },
 	    {
-	    	quote: "Quote 2",
-			name:"Quote 2 name",
+	    	quote: "Let love be at the center of all you do. Decisions and choices made out of love will always lead to beautiful destinations, eventually.",
+			name:"Doe Zantamata"
 		},
 	    {
-			quote: "Quote 3",
-			name:"Quote 3 name",
+			quote: "A candle loses nothing by lighting another candle.",
+			name:"James Keller"
 		},
 	    {
-			quote: "Quote 4",
-			name:"Quote 4 name",
+			quote: "All was well.",
+			name:"JK Rowling."
 		},
 	    {
-			quote: "Quote 5",
-			name:"Quote 5 name",
+			quote: "We the Best Music",
+			name:"DJ Khaled"
 		}
 		];
 		
-console.log(quotes);
+//console.log(quotes[0]);
+//document.write(quotes[4].name);
