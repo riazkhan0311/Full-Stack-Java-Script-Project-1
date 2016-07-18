@@ -8,12 +8,17 @@
 	//TODO RANDOMIZE QUOTE INDEX
 	
 	// selects a random quote object from the quotes array
+<<<<<<< HEAD
     var quote = quotes[2].name;
+=======
+    var quote = quotes[2];
+>>>>>>> origin/master
     // returns the randomly selected quote object
 	return quote;	
 }
 
 
+<<<<<<< HEAD
 console.log(getRandomQuote ());
 
 
@@ -52,3 +57,6 @@ for (var i = 0; i < students.length; i += 1) {
   
 }
 print(message);
+=======
+console.log(getRandomQuote ());
+>>>>>>> origin/master

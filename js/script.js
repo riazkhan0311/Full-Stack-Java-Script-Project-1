@@ -9,11 +9,43 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 	//TODO RANDOMIZE QUOTE INDEX
 	var randomNumber = Math.floor(Math.random() * 5);
 	// selects a random quote object from the quotes array
+<<<<<<< HEAD
     var quote = quotes[randomNumber];
     // returns the randomly selected quote object
 	return quote;	
-	
+=======
+    var quote = quotes[2];
+    // returns the randomly selected quote object
+	return quote;	
 }
+
+//Create a function named printQuote which follows these rules:
+
+function printQuote (getRandomQuote) {
+ var getRandomQuoteVar = getRandomQuote; //getRandomQuote () 
+ var listHTML = '<ol>';
+  for ( var i = 0; i < quotes.length; i += 1) {
+    listHTML += '<li>' + quotes[i][0] + ' by ' + quotes[i][1] + '</li>';
+  }
+  listHTML += '</ol>';
+  //print(listHTML);
+  console.log(listHTML);
+  }
+
+//printQuote calls the getRandomQuote function and stores the returned quote object in a variable	
+printQuote (getRandomQuote);
+>>>>>>> origin/master
+	
+
+//}
+
+/*
+
+
+//<p class="quote"> [quote here] </p> <p class="source"> [source here] <span class="citation"> [citation here] </span> <span class="year"> [year here] </span> </p>
+
+//var sentence = document.getElementByClassName(quote);
+//console.log(sentence);
 
 console.log(getRandomQuote ());
 
@@ -36,3 +68,7 @@ function printQuote () {
 
 
 
+<<<<<<< HEAD
+=======
+document.getElementById('quote-box').innerHTML = quotes[0].quote;
+>>>>>>> origin/master
